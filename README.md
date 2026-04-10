@@ -6,74 +6,20 @@ Website ini merupakan sistem informasi **Penerimaan Peserta Didik Baru (PPDB)** 
 
 ## 🌐 Preview Website
 
-![Preview Web](asset/img/banner.png)
+![Preview Web](asset/img/priview.png)
 
-📌 *Opsional:* Kamu bisa ganti gambar ini dengan screenshot asli web kamu agar lebih profesional.
 
 ---
 
 1. **Halaman Beranda (index.html)**
 
-   * Bagian hero + tampilan awal
-   * Simpan sebagai:
-
-     ```
-     screenshot-beranda.png
-     ```
+![Beranda](asset/img/priview.png)
 
 2. **Halaman Alur (alur.html)**
-
-   * Bagian step-card (01–05)
-   * Simpan sebagai:
-
-     ```
-     screenshot-alur.png
-     ```
+![Alur](asset/img/ssalur.png)
 
 3. **Halaman Form (form.html)**
-
-   * Tampilan form input
-   * Simpan sebagai:
-
-     ```
-     screenshot-form.png
-     ```
-
----
-
-### 📁 TARUH FILE SCREENSHOT DI SINI:
-
-Masukkan ke folder:
-
-```
-asset/img/
-```
-
-Jadi hasilnya:
-
-```
-asset/img/screenshot-beranda.png
-asset/img/screenshot-alur.png
-asset/img/screenshot-form.png
-```
-
----
-
-### 🖼️ Tampilkan di README:
-
-## 📷 Tampilan Website
-
-### 🏠 Beranda
-
-![Beranda](asset/img/screenshot-beranda.png)
-
-### 📊 Alur Pendaftaran
-
-![Alur](asset/img/screenshot-alur.png)
-
-### 📝 Form Pendaftaran
-
-![Form](asset/img/screenshot-form.png)
+![Form](asset/img/ssform.png)
 
 ---
 
@@ -214,19 +160,13 @@ form.addEventListener("submit", function(e){
 
 ---
 
-## 🚀 Pengembangan Selanjutnya
-
-* Database (MySQL)
-* Login admin
-* Dashboard pendaftar
-* Hosting GitHub Pages
-
----
-
 ## 👨‍💻 Author
 
 **Bagus Dananjaya**
-NIM: 253307045
+- NIM: 253307045
+- Kelas:2B
+- Prodi: D3 Teknologi Informasi
+
 
 ---
 
