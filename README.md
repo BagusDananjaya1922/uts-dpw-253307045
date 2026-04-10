@@ -78,9 +78,9 @@ project/
 │   │   ├── img1.png
 │   │   ├── sekolahan.png
 │   │   ├── kartun.png
-│   │   ├── screenshot-beranda.png
-│   │   ├── screenshot-alur.png
-│   │   └── screenshot-form.png
+│   │   ├── sspriview.png
+│   │   ├── ssalur.png
+│   │   └── ssform.png
 ```
 
 ---
