@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran - SGN</title>
+
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .form-container {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            margin: 50px auto;
+            max-width: 800px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 10px;
+            border: 1px solid #cbd5e1;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #166534;
+        }
+
+        .btn-submit {
+            background: #166534;
+            color: white;
+            padding: 14px;
+            width: 100%;
+            border: none;
+            border-radius: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #14532d;
+        }
+
+        /* notif */
+        .notif {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 15px 25px;
+            border-radius: 10px;
+            color: white;
+            font-weight: 600;
+            opacity: 0;
+            transform: translateY(-20px);
+            transition: 0.3s;
+            z-index: 9999;
+        }
+
+        .notif.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .notif.success {
+            background: #22c55e;
+        }
+
+        .notif.error {
+            background: #ef4444;
+        }
+    </style>
+</head>
+
+<body>
+
+<a href="form.html" class="btn-floating-daftar">
+    <span class="text-tombol">Daftar Sekarang</span>
+    <img src="https://cdn-icons-png.flaticon.com/512/3602/3602145.png" class="icon-daftar">
+</a>
+
+<div class="topbar">
+    <div class="topbar-left">
+        <a href="tel:6285856910642">📞 <strong>Kontak PPDB:</strong> 0858-5691-0642</a>
+    </div>
+    <div class="topbar-right">
+        PPDB Sekolah Global Nusantara 2026/2027
+    </div>
+</div>
+
+<header class="header">
+    <div class="container nav">
+        <div class="logo">
+            <img src="asset/img/logo.jpeg">
+            <span>SEKOLAH GLOBAL NUSANTARA</span>
+        </div>
+        <div class="menu">
+            <a href="index.html">Beranda</a>
+            <a href="alur.html">Alur</a>
+            <a href="form.html" class="active-link">Pendaftaran</a>
+        </div>
+    </div>
+</header>
+
+<section class="hero hero-form">
+    <div class="overlay">
+        <div class="hero-content">
+            <h1>Formulir Pendaftaran</h1>
+            <p>Isi data dengan benar dan lengkap</p>
+            <div class="hero-line"></div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="form-container">
+
+        <h2>Data Calon Siswa</h2>
+        <p>Isi data dengan benar dan lengkap!</p>
+
+        <form id="formPPDB">
+
+            <div class="form-group">
+                <label>Nama Lengkap</label>
+                <input type="text" id="nama" required>
+            </div>
+
+            <div class="form-group">
+                <label>NIK (16 Digit)</label>
+                <input type="text" id="nik" required>
+            </div>
+
+            <div class="form-group">
+                <label>Asal Sekolah</label>
+                <input type="text" id="sekolah" required>
+            </div>
+
+            <div class="form-group">
+                <label>Jalur Pendaftaran</label>
+                <select id="jalur">
+                    <option>Prestasi</option>
+                    <option>Peringkat Paralel</option>
+                    <option>Reguler</option>
+                    <option>Afirmasi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>No WhatsApp</label>
+                <input type="text" id="wa" required>
+            </div>
+
+            <button type="submit" class="btn-submit">Kirim Pendaftaran</button>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- notif -->
+<div id="notif" class="notif"></div>
+
+<footer class="footer">
+    <div class="footer-grid">
+        <div class="footer-box">
+            <h3>Alamat Kami</h3>
+            <p>Jl. Taman Meruya Ilir Blok L No.1, Meruya Utara, Kec. Kembangan, Jakarta Barat.</p>
+        </div>
+
+        <div class="footer-box">
+            <h3>Menu Navigasi</h3>
+            <a href="index.html">» Beranda</a>
+            <a href="alur.html">» Alur</a>
+            <a href="form.html">» Formulir</a>
+        </div>
+
+        <div class="footer-box">
+            <h3>Hubungi Kami</h3>
+            <p>📞 0858-5691-0642</p>
+            <p>📧 baguspsht07@gmail.com</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+         © 2026 <strong>Sekolah Global Nusantara</strong> | Bagus Dananjaya - 253307045
+    </div>
+</footer>
+
+<!-- validasi -->
+<script>
+    const form = document.getElementById("formPPDB");
+    const notif = document.getElementById("notif");
+
+    function showNotif(message, type){
+        notif.innerText = message;
+        notif.className = "notif show " + type;
+
+        setTimeout(() => {
+            notif.classList.remove("show");
+        }, 3000);
+    }
+
+    form.addEventListener("submit", function(e){
+        e.preventDefault();
+
+        const nik = document.getElementById("nik").value.trim();
+
+        if(nik.length !== 16 || isNaN(nik)){
+            showNotif("NIK harus 16 digit angka!", "error");
+            return;
+        }
+
+        showNotif("Pendaftaran berhasil dikirim!", "success");
+
+        form.reset();
+    });
+</script>
+
+</body>
+</html>
